@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dfe2e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-section {
+    margin-top: 130px;
+    margin-left: 30px;
+    border-radius: 10px 0 0 10px;
+    /* padding: 20px; */
+}
+.para{
+  margin: 0;
+    padding: 0;
+}
+
+.logo-section img {
+    width: 200px;
+    height: 150px;
+}
+
+.form-section {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.btn1{
+    background-color: #36a420;
+}
+.h1{
+    color: #1877f2;
+    font-size: 2.5rem;
+}
+  
+
+.form-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #1877f2;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #165eab;
+}
+
+.create-account {
+    margin-top: 20px;
+}
+
+.create-account .toggle-button {
+    color: #42b72a;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.create-account .toggle-button:hover {
+    color: #36a420;
+}
+
+.signup-details {
+    display: none;
+}
+
+#signup-toggle:checked ~ .signup-details {
+    display: block;
+}
+
+.back-to-login .toggle-button {
+    color: #1877f2;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.back-to-login .toggle-button:hover {
+    color: #165eab;
+}
+
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 2em;
+    }
+    
+    .para {
+        font-size: 0.9em;
+    }
+    
+    .signup-form input, .signup-form button {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 660px) {
+    .container {
+        padding: 10px;
+        margin-top: 0; /* Remove top margin for small screens */
+    }
+
+    .logo-section {
+        position: static; /* Remove the fixed positioning */
+        margin-bottom: 20px;
+    }
+
+    .h1 {
+        font-size: 1.8em;
+    }
+    
+    .para {
+        font-size: 0.8em;
+    }
+
+    .signup-form input, .signup-form button {
+        font-size: 0.8em;
+    }
+
+    .create-account, .back-to-login {
+        font-size: 0.8em;
+    }
+
+    .form-card {
+        width: 100%;
+        margin-top: 20px; /* Add spacing from the top */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .h1 {
+        font-size: 1.6em;
+    }
+    
+    .para {
+        font-size: 0.7em;
+    }
+    
+    .signup-form input, .signup-form button {
+        font-size: 0.7em;
+    }
+
+    .create-account, .back-to-login {
+        font-size: 0.7em;
+    }
+}
